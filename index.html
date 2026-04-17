@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV</title>
+
+<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet'>
+
+<style>
+@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Utils */
+.clear { clear: both; }
+.purple { color: #837c9a; }
+
+.block { margin: 25px 30px; }
+.block h1 { margin-left: -5px; font-weight: 200; }
+.last.block { margin-bottom: 110px; }
+
+.horizontal_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.horizontal_list li { float: left; padding-left: 0; text-indent: 0; }
+.horizontal_list li:before { content: none; }
+
+.horizontal_line {
+	margin: 34px 0 0 30px;
+	height: 26px;
+	position: relative;
+}
+.line_left, .line_right {
+	border-top: 1px solid #434247;
+	width: 305px;
+	margin-top: 13px;
+}
+.line_left { float: left; }
+.line_right { float: right; }
+
+.left_circle, .central_circle, .right_circle {
+	background: rgba(255,255,255,0.15);
+	position: absolute;
+	border-radius: 50px;
+}
+.left_circle, .right_circle {
+	width: 13px;
+	height: 13px;
+	top: 7px;
+}
+.left_circle { left: 314px; }
+.central_circle {
+	width: 26px;
+	height: 26px;
+	top: 0;
+	left: 322px;
+}
+.right_circle { left: 343px; }
+
+/* Main */
+body {
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/dark_wall.png);
+	margin: 0;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Lato', Helvetica, sans-serif;
+	color: #48DA9B;
+}
+h1 { font-size: 48px; margin: 20px 0; }
+h2 { font-size: 28px; margin: 32px 0 24px; }
+
+p, li, a {
+	font-family: 'Lato', Helvetica, sans-serif;
+	color: #e4e3e8;
+}
+
+ul { list-style: none; padding:0; margin:0; }
+li { padding-left: 1em; }
+li:before { content: "• "; color: #837c9a; }
+
+/* Layout */
+#main_container { width: 960px; margin: auto; }
+
+#header {
+	height: 130px;
+	border-bottom: 1px solid #403F44;
+}
+
+.header_logotype_container {
+	width: 260px;
+	float: left;
+}
+
+#left_col {
+	width: 260px;
+	float: left;
+}
+
+#content_container {
+	width: 699px;
+	float: left;
+	border-left: 1px solid #403F44;
+}
+
+/* Profile */
+.profile_frame {
+	width: 230px;
+	height: 260px;
+	background: black;
+	margin-top: 30px;
+}
+.profile_picture {
+	width: 210px;
+	height: 240px;
+	margin:10px;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86033/profile/profile-512_3.jpg) no-repeat center/cover;
+}
+
+.send_message_button {
+	display: block;
+	background: #48DA9B;
+	width: 230px;
+	height: 50px;
+	text-align:center;
+	line-height:50px;
+	color:#000;
+	margin-top:20px;
+	text-decoration:none;
+}
+
+.send_message_button:hover {
+	background:#29C782;
+}
+
+#footer {
+	width: 960px;
+	height: 60px;
+	border-top: 1px solid #403F44;
+	clear: both;
+	text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="main_container">
+
+  <div id="header">
+    <div class="header_logotype_container">
+      <h1 class="logotype_name">Javier <span class="purple">Latorre</span></h1>
+      <h2 class="logotype_occupation">Frontend Web Developer</h2>
+    </div>
+  </div>
+
+  <div id="left_col">
+    <div class="profile_frame">
+      <div class="profile_picture"></div>
+    </div>
+
+    <div class="hello_content">
+      <h2>Hello!</h2>
+      <p>I'm passionate about technology and human behavior.</p>
+    </div>
+
+    <a href="#" class="send_message_button">Send message</a>
+  </div>
+
+  <div id="content_container">
+    <div class="block">
+      <h1>Profile</h1>
+      <p>There is no end to education.</p>
+    </div>
+
+    <div class="block">
+      <h2>About me</h2>
+      <p>I like development, technology and learning.</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>Javier Latorre CV</p>
+  </div>
+
+</div>
+
+</body>
+</html>
